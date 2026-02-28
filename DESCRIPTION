@@ -1,0 +1,10 @@
+Package: menace
+Title: Unleash your inner menace
+Version: 0.0.0.9000
+Authors@R: 
+    person("Adam", "Shen", , "adamshen1@gmail.com", role = c("aut", "cre"))
+Description: Tools to make you a menace.
+License: GPL (>= 3)
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
