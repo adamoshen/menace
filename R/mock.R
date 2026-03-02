@@ -54,7 +54,7 @@ mock <- function(string, method = "alternate") {
   )
 
   if (!is.null(string_names)) {
-    out <- set_names(out, string_names)
+    out <- rlang::set_names(out, string_names)
   }
 
   out
