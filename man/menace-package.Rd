@@ -4,7 +4,7 @@
 \name{menace-package}
 \alias{menace}
 \alias{menace-package}
-\title{menace: Unleash your inner menace}
+\title{menace: Unleash Your Inner Menace}
 \description{
 Tools to make you a menace.
 }
