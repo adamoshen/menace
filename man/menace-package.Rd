@@ -6,6 +6,8 @@
 \alias{menace-package}
 \title{menace: Unleash Your Inner Menace}
 \description{
+\if{html}{\figure{logo.png}{options: style='float: right' alt='logo' width='120'}}
+
 Tools to make you a menace.
 }
 \author{
