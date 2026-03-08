@@ -9,7 +9,7 @@
 #' @returns A character vector with the same length as the input.
 #' @examples
 #' # example code
-#' msg <- "look here, you little shit"
+#' msg <- "listen up, you little jerk"
 #' shout(msg)
 #'
 #' # Recommended to use with `teams_bold()`.

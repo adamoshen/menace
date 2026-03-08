@@ -21,7 +21,7 @@ Inspired by Ryan Kavanagh.
 }
 \examples{
 # example code
-msg <- "look here, you little shit"
+msg <- "listen up, you little jerk"
 shout(msg)
 
 # Recommended to use with `teams_bold()`.
