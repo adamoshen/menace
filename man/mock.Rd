@@ -28,16 +28,14 @@ For other destinations, the \href{https://k5cents.github.io/gluedown/}{gluedown}
 GitHub Flavoured Markdown formatters.
 }
 \examples{
-library(magrittr)
-
 # Single string
 msg <- "Delete my number from your phone."
 mock(msg)
 mock(msg, "random")
 
 # Write to clipboard and paste to Teams
-# mock(msg) \%>\%
-#   teams_italic() \%>\%
+# mock(msg) |>
+#   teams_italic() |>
 #   clipr::write_clip()
 
 # Character vector
@@ -46,7 +44,8 @@ mock(msgs)
 mock(msgs, "random")
 
 # Write to clipboard and paste to Teams
-# mock(msgs) \%>\%
-#   teams_bold() \%>\%
+# msgs |>
+#   mock() |>
+#   teams_bold() |>
 #   clipr::write_clip()
 }

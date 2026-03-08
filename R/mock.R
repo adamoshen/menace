@@ -14,16 +14,14 @@
 #' @param method A string denoting the method to use: either `"alternate"` (default) or `"random"`.
 #' @returns A character vector with the same length as the input.
 #' @examples
-#' library(magrittr)
-#'
 #' # Single string
 #' msg <- "Delete my number from your phone."
 #' mock(msg)
 #' mock(msg, "random")
 #'
 #' # Write to clipboard and paste to Teams
-#' # mock(msg) %>%
-#' #   teams_italic() %>%
+#' # mock(msg) |>
+#' #   teams_italic() |>
 #' #   clipr::write_clip()
 #'
 #' # Character vector
@@ -32,8 +30,9 @@
 #' mock(msgs, "random")
 #'
 #' # Write to clipboard and paste to Teams
-#' # mock(msgs) %>%
-#' #   teams_bold() %>%
+#' # msgs |>
+#' #   mock() |>
+#' #   teams_bold() |>
 #' #   clipr::write_clip()
 #' @export
 mock <- function(string, method = "alternate") {
