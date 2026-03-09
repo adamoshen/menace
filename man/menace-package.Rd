@@ -8,7 +8,16 @@
 \description{
 \if{html}{\figure{logo.png}{options: style='float: right' alt='logo' width='120'}}
 
-Tools to make you a menace.
+Text-formatting tools to help you unleash your inner menace.
+}
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://adamoshen.github.io/menace}
+  \item \url{https://github.com/adamoshen/menace}
+  \item Report bugs at \url{https://github.com/adamoshen/menace/issues}
+}
+
 }
 \author{
 \strong{Maintainer}: Adam Shen \email{adamshen1@gmail.com}
