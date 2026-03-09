@@ -1,0 +1,19 @@
+url: https://adamoshen.github.io/menace
+template:
+  bootstrap: 5
+  bootswatch: zephyr
+  bslib:
+    primary: "#62399F"
+    base_font: {google: "Google Sans"}
+    code_font: {google: "Google Sans Code"}
+  theme: atom-one-light
+
+reference:
+- title: "Text formatters"
+  contents:
+  - mock
+  - shout
+
+- title: "Markdown formatters for Microsoft Teams"
+  contents:
+  - teams_bold
