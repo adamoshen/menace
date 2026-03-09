@@ -9,11 +9,7 @@ template:
   theme: atom-one-light
 
 reference:
-- title: "Text formatters"
+- title: "Text alterations"
   contents:
   - mock
   - shout
-
-- title: "Markdown formatters for Microsoft Teams"
-  contents:
-  - teams_bold

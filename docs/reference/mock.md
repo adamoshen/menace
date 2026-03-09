@@ -31,15 +31,6 @@ lowercased. Letters then alternate between lowercase and uppercase. When
 `method = "random"`, 60% of the letters (at random) in each string will
 swap to the other case.
 
-When the output is to be pasted to Microsoft Teams, mocked messages can
-be formatted using the included [teams
-formatters](https://adamoshen.github.io/menace/reference/teams_md.md)
-and copied to the clipboard using
-[`clipr::write_clip()`](http://matthewlincoln.net/clipr/reference/write_clip.md).
-For other destinations, the
-[gluedown](https://k5cents.github.io/gluedown/) package provides GitHub
-Flavoured Markdown formatters.
-
 ## Examples
 
 ``` r
@@ -50,9 +41,8 @@ mock(msg)
 mock(msg, "random")
 #> [1] "DElETE My NuMBER From Your PHONE."
 
-# Write to clipboard and paste to Teams
+# Write to clipboard and paste elsewhere
 # mock(msg) |>
-#   teams_italic() |>
 #   clipr::write_clip()
 
 # Character vector
@@ -62,9 +52,8 @@ mock(msgs)
 mock(msgs, "random")
 #> [1] "Omg, YOU'Re SoOOoo aNnOYiNG"  "dON't EVeR SPeak tO mE AGaIN"
 
-# Write to clipboard and paste to Teams
+# Write to clipboard and paste elsewhere
 # msgs |>
 #   mock() |>
-#   teams_bold() |>
 #   clipr::write_clip()
 ```

@@ -14,7 +14,7 @@ A character vector with the same length as the input.
 }
 \description{
 Return a character vector loudly by uppercasing all letters and increasing spacing. Best used
-in conjunction with \code{\link[=teams_bold]{teams_bold()}}.
+with a bold-formatting.
 }
 \details{
 Inspired by Ryan Kavanagh.
@@ -24,10 +24,9 @@ Inspired by Ryan Kavanagh.
 msg <- "listen up, you little jerk"
 shout(msg)
 
-# Recommended to use with `teams_bold()`.
-# Write to clipboard and paste to Teams
+# Recommended to use with bold-formatting.
+# Write to clipboard and paste elsewhere
 # msg |>
 #   shout() |>
-#   teams_bold() |>
 #   clipr::write_clip()
 }

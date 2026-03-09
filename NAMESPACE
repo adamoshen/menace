@@ -2,7 +2,4 @@
 
 export(mock)
 export(shout)
-export(teams_bold)
-export(teams_italic)
-export(teams_strikethrough)
 importFrom(magrittr,"%>%")

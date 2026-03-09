@@ -28,9 +28,8 @@ msg <- "Delete my number from your phone."
 mock(msg)
 mock(msg, "random")
 
-# Write to clipboard and paste to Teams
+# Write to clipboard and paste elsewhere
 # mock(msg) |>
-#   teams_italic() |>
 #   clipr::write_clip()
 
 # Character vector
@@ -38,9 +37,8 @@ msgs <- c("OMG, you're sooooo annoying", "Don't ever speak to me again")
 mock(msgs)
 mock(msgs, "random")
 
-# Write to clipboard and paste to Teams
+# Write to clipboard and paste elsewhere
 # msgs |>
 #   mock() |>
-#   teams_bold() |>
 #   clipr::write_clip()
 }

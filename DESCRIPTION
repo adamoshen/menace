@@ -3,7 +3,7 @@ Title: Unleash Your Inner Menace
 Version: 0.0.0.9000
 Authors@R: 
     person("Adam", "Shen", , "adamshen1@gmail.com", role = c("aut", "cre"))
-Description: Text-formatting tools to help you unleash your inner menace.
+Description: Text-altering tools to help you unleash your inner menace.
 License: GPL (>= 3) + file LICENSE
 URL: https://adamoshen.github.io/menace, https://github.com/adamoshen/menace
 BugReports: https://github.com/adamoshen/menace/issues

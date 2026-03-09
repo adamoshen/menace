@@ -1,7 +1,7 @@
 #' Return a character vector loudly
 #'
 #' Return a character vector loudly by uppercasing all letters and increasing spacing. Best used
-#' in conjunction with [teams_bold()].
+#' with a bold-formatting.
 #'
 #' Inspired by Ryan Kavanagh.
 #'
@@ -12,11 +12,10 @@
 #' msg <- "listen up, you little jerk"
 #' shout(msg)
 #'
-#' # Recommended to use with `teams_bold()`.
-#' # Write to clipboard and paste to Teams
+#' # Recommended to use with bold-formatting.
+#' # Write to clipboard and paste elsewhere
 #' # msg |>
 #' #   shout() |>
-#' #   teams_bold() |>
 #' #   clipr::write_clip()
 #' @export
 shout <- function(string) {

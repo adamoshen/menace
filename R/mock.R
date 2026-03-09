@@ -14,9 +14,8 @@
 #' mock(msg)
 #' mock(msg, "random")
 #'
-#' # Write to clipboard and paste to Teams
+#' # Write to clipboard and paste elsewhere
 #' # mock(msg) |>
-#' #   teams_italic() |>
 #' #   clipr::write_clip()
 #'
 #' # Character vector
@@ -24,10 +23,9 @@
 #' mock(msgs)
 #' mock(msgs, "random")
 #'
-#' # Write to clipboard and paste to Teams
+#' # Write to clipboard and paste elsewhere
 #' # msgs |>
 #' #   mock() |>
-#' #   teams_bold() |>
 #' #   clipr::write_clip()
 #' @export
 mock <- function(string, method = "alternate") {

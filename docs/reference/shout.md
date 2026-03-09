@@ -1,8 +1,7 @@
 # Return a character vector loudly
 
 Return a character vector loudly by uppercasing all letters and
-increasing spacing. Best used in conjunction with
-[`teams_bold()`](https://adamoshen.github.io/menace/reference/teams_md.md).
+increasing spacing. Best used with a bold-formatting.
 
 ## Usage
 
@@ -32,10 +31,9 @@ msg <- "listen up, you little jerk"
 shout(msg)
 #> [1] "L I S T E N    U P ,    Y O U    L I T T L E    J E R K"
 
-# Recommended to use with `teams_bold()`.
-# Write to clipboard and paste to Teams
+# Recommended to use with bold-formatting.
+# Write to clipboard and paste elsewhere
 # msg |>
 #   shout() |>
-#   teams_bold() |>
 #   clipr::write_clip()
 ```
