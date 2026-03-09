@@ -49,9 +49,9 @@ library(menace)
 perform any stylistic formattings and then copy the result to the clipboard, e.g. with
 [**clipr**](https://matthewlincoln.net/clipr/)'s `write_clip()` function.
 
-Designed with Microsoft Teams in mind as the output destination this package includes markup
-formatters compatible with Microsoft Teams. For other destinations, consider the usage of the markup
-functions contained in [**gluedown**](https://k5cents.github.io/gluedown/).
+Designed with Microsoft Teams in mind as the output destination, this package includes Markdown
+formatters compatible with Microsoft Teams. For other destinations, consider the usage of the
+Markdown functions contained in [**gluedown**](https://k5cents.github.io/gluedown/).
 
 The intended use case of **menace** is for single strings. However, the functions are compatible
 with character vectors.
