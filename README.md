@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# menace
+# menace <img src="man/figures/logo.png" align="right"/>
 
 <!-- badges: start -->
 
@@ -72,5 +72,5 @@ functions are compatible with character vectors.
   shout() |>
   mock(method = "random") |>
   teams_bold()
-#> [1] "*T H I S    p A c k a g e    i s    a m A Z I n g !*"
+#> [1] "*t H i S    P a c k a G e    I S    a m A Z i n g !*"
 ```
