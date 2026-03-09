@@ -5,11 +5,6 @@
 #' When `method = "alternate"`, the first letter of each string is lowercased. Letters then
 #' alternate between lowercase and uppercase. When `method = "random"`, 60% of the letters
 #' (at random) in each string will swap to the other case.
-#'
-#' When the output is to be pasted to Microsoft Teams, mocked messages can be formatted using the
-#' included [teams formatters][teams_md] and copied to the clipboard using `clipr::write_clip()`.
-#' For other destinations, the [gluedown](https://k5cents.github.io/gluedown/) package provides
-#' GitHub Flavoured Markdown formatters.
 #' @param string A character vector.
 #' @param method A string denoting the method to use: either `"alternate"` (default) or `"random"`.
 #' @returns A character vector with the same length as the input.
