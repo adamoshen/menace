@@ -1,0 +1,80 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# menace
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+**menace** provides text-formatting tools to enhance your chat game and unleash your inner menace
+(and at times, help save your coworkers from corporate depression).
+
+## Installation
+
+You can install this package using
+
+``` r
+# install.packages("pak")
+pak::pak("adamoshen/menace")
+```
+
+or
+
+``` r
+# install.packages("remotes")
+remotes::install_github("adamoshen/menace")
+```
+
+## Introduction
+
+```{r}
+library(menace)
+```
+
+**menace** works by formatting text depending on the action called. It is then up to the user to
+perform any stylistic formattings and then copy the result to the clipboard, e.g. with
+[**clipr**](https://matthewlincoln.net/clipr/)'s `write_clip()` function.
+
+Designed with Microsoft Teams in mind as the output destination this package includes markup
+formatters compatible with Microsoft Teams. For other destinations, consider the usage of the markup
+functions contained in [**gluedown**](https://k5cents.github.io/gluedown/).
+
+The intended use case of **menace** is for single strings. However, the functions are compatible
+with character vectors.
+
+## Example usage - `mock()`
+
+```{r}
+"This package is amazing!" |>
+  mock() |>
+  teams_italic()
+```
+
+## Example usage - `shout()`
+
+```{r}
+"This package is amazing!" |>
+  shout() |>
+  teams_bold()
+```
+
+## Example usage - `shout()` + `mock()`
+
+```{r}
+"This package is amazing!" |>
+  shout() |>
+  mock(method = "random") |>
+  teams_bold()
+```
