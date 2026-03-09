@@ -1,6 +1,6 @@
 Package: menace
 Title: Unleash Your Inner Menace
-Version: 0.0.0.9000
+Version: 0.0.0.9001
 Authors@R: 
     person("Adam", "Shen", , "adamshen1@gmail.com", role = c("aut", "cre"))
 Description: Text-altering tools to help you unleash your inner menace.
