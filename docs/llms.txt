@@ -35,16 +35,16 @@ The timing of the formatting of the text will depend on the output
 destination. Microsoft Teams does not support the pasting of
 Markdown-formatted text, e.g. copying `*this text*` will paste as-is
 **with** the asterisks. As such, text for Microsoft Teams will need to
-be formatted after pasting within Microsoft Teams. Other destinations,
-such as Discord, do not have this issue, and text can be
-Markdown-formatted before pasting. For destinations where the pasting of
-Markdown-formatted text is supported, the functions contained in
-[**gluedown**](https://k5cents.github.io/gluedown/) may be of interest.
+be formatted after pasting within Microsoft Teams.
+
+Other destinations, such as Discord, do not have this issue, and text
+can be Markdown-formatted before pasting. Markdown formatters tailored
+towards Discord are included in this package.
 
 The intended use case of **menace** is for single strings. However, the
 functions are compatible with character vectors.
 
-## Example usage - `mock()`
+## Example usage: `mock()`
 
 ``` r
 "This package is amazing!" |>
@@ -52,15 +52,29 @@ functions are compatible with character vectors.
 #> [1] "tHiS PaCkAgE Is aMaZiNg!"
 ```
 
-## Example usage - `shout()`
-
 ``` r
 "This package is amazing!" |>
-  shout()
-#> [1] "T H I S    P A C K A G E    I S    A M A Z I N G !"
+  mock() |>
+  md_underline()
+#> [1] "__tHiS PaCkAgE Is aMaZiNg!__"
 ```
 
-## Example usage - `shout()` + `mock()`
+## Example usage: `shout()`
+
+``` r
+"This package is not so great!" |>
+  shout()
+#> [1] "T H I S    P A C K A G E    I S    N O T    S O    G R E A T !"
+```
+
+``` r
+"This package is not so great!" |>
+  shout() |>
+  md_strikethrough()
+#> [1] "~~T H I S    P A C K A G E    I S    N O T    S O    G R E A T !~~"
+```
+
+## Example usage: `shout()` + `mock()`
 
 ``` r
 "This package is amazing!" |>
@@ -69,12 +83,29 @@ functions are compatible with character vectors.
 #> [1] "t H i S    P a c k a G e    I S    a m A Z i n g !"
 ```
 
+``` r
+"This package is amazing!" |>
+  shout() |>
+  mock(method = "random") |>
+  md_bold()
+#> [1] "**T H i S    p a C k a G E    i S    a m A z i n g !**"
+```
+
 # Package index
 
-## Text formatters
+## Text alterations
 
 - [`mock()`](https://adamoshen.github.io/menace/reference/mock.md) :
   Return a character vector mockingly
 - [`shout()`](https://adamoshen.github.io/menace/reference/shout.md) :
   Return a character vector loudly
+
+## Markdown formatters
+
+- [`md_bold()`](https://adamoshen.github.io/menace/reference/md_formatters.md)
+  [`md_italic()`](https://adamoshen.github.io/menace/reference/md_formatters.md)
+  [`md_strikethrough()`](https://adamoshen.github.io/menace/reference/md_formatters.md)
+  [`md_underline()`](https://adamoshen.github.io/menace/reference/md_formatters.md)
+  [`md_spoiler()`](https://adamoshen.github.io/menace/reference/md_formatters.md)
+  : Markdown formatters
 

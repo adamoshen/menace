@@ -1,28 +1,43 @@
-#' @noRd
-# Markdown formatting for Microsoft Teams
-#
-# Format a character vector for Microsoft Teams.
-#
-# Microsoft Teams uses a different Markdown syntax. See [here](https://support.microsoft.com/en-us/office/use-markdown-formatting-in-microsoft-teams-4d10bd65-55e2-4b2d-a1f3-2bebdcd2c772)
-# for a full list of formats.
-#
-# Microsoft Teams doesn't actually support the pasting of Markdown-formatted text, so these
-# functions are getting un-exported.
-# @name teams_md
-# NULL
+#' Markdown formatters
+#'
+#' Format a character vector with Markdown.
+#'
+#' The Markdown formatters in the [gluedown](https://k5cents.github.io/gluedown/) package use
+#' [glue](https://glue.tidyverse.org/), which support strings and not character vectors. For
+#' consistency, since all string-altering functions in this package support and return character
+#' vectors, vectorised Markdown-formatters are also included. The Markdown syntax used here is
+#' tailored for Discord.
+#' @name md_formatters
+NULL
 
-# @param string A character vector.
-# @rdname teams_md
-teams_bold <- function(string) {
+#' @param string A character vector.
+#' @returns A character vector with the same length as the input.
+#' @rdname md_formatters
+#' @export
+md_bold <- function(string) {
+  stringr::str_c("**", string, "**")
+}
+
+#' @rdname md_formatters
+#' @export
+md_italic <- function(string) {
   stringr::str_c("*", string, "*")
 }
 
-# @rdname teams_md
-teams_italic <- function(string) {
-  stringr::str_c("_", string, "_")
+#' @rdname md_formatters
+#' @export
+md_strikethrough <- function(string) {
+  stringr::str_c("~~", string, "~~")
 }
 
-# @rdname teams_md
-teams_strikethrough <- function(string) {
-  stringr::str_c("~", string, "~")
+#' @rdname md_formatters
+#' @export
+md_underline <- function(string) {
+  stringr::str_c("__", string, "__")
+}
+
+#' @rdname md_formatters
+#' @export
+md_spoiler <- function(string) {
+  stringr::str_c("||", string, "||")
 }

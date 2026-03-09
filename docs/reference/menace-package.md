@@ -1,6 +1,6 @@
 # menace: Unleash Your Inner Menace
 
-Text-formatting tools to help you unleash your inner menace.
+Text-altering tools to help you unleash your inner menace.
 
 ## See also
 

@@ -8,7 +8,7 @@
 \description{
 \if{html}{\figure{logo.png}{options: style='float: right' alt='logo' width='120'}}
 
-Text-formatting tools to help you unleash your inner menace.
+Text-altering tools to help you unleash your inner menace.
 }
 \seealso{
 Useful links:

@@ -13,3 +13,7 @@ reference:
   contents:
   - mock
   - shout
+
+- title: "Markdown formatters"
+  contents:
+  - md_formatters
